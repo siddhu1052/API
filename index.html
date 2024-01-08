@@ -20,6 +20,7 @@
             .then(data => {document.getElementById('result').innerHTML = data[0]['content']
             document.getElementById('result').className = "alert alert-success mt-2"
             });
+            setInterval(fetch_quotes, 20000);
         }
     </script>
 </head>
